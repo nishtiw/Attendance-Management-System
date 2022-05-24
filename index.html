@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Attendance</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="form-container">
+            <div>
+                <h2>Kindly Register</h2>
+            </div>
+            <div>
+                <!-- <form action="" id="form" name="form"> -->
+                <div class="float100">
+                    <div class="float50">
+                        <label for="">Name: </label>
+                    </div>
+                    <div class="float50">
+                        <input type="text" name="name" id="uname" placeholder="Enter your name" onblur="validateUser()">
+                        <span id="checkName" class="errorMsg"></span>
+                    </div>
+                </div>
+                <div class="float100">
+                    <div class="float50">
+                        <label for="">Roll No:</label>
+                    </div>
+                    <div class="float50">
+                        <input type="number" name="rollNo" id="uRollNo" placeholder="Enter your roll no" min="1"
+                            onblur="validateUser()"><span id="checkRollNo" class="errorMsg"></span>
+                    </div>
+                </div>
+                <div class="float100">
+                    <div class="float50">
+                        <label for="">Course: </label>
+                    </div>
+                    <div class="float50">
+                        <input type="text" name="course" id="ucourse" placeholder="Enter course"
+                            onblur="validateUser()"><span id="checkCourse" class="errorMsg"></span>
+                    </div>
+                </div>
+                <div class="float100 btn-div">
+                    <div>
+                        <button onclick="setInputData()" class="btn">Submit</button>
+                    </div>
+                    <div>
+                        <span id="duplicateData" class="errorMsg"></span>
+                    </div>
+                </div>
+
+                <!-- </form> -->
+            </div>
+        </div>
+        <div>
+            <div>
+                <!-- <h2>All Trainees</h2> -->
+            </div>
+            <div>
+                <p id="displayUsers"></p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Roll No</th>
+                            <th>Name</th>
+                            <th>Course</th>
+                            <th>Attendance</th>
+                            <th>Date and time</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-content">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div>
+            <div class="form-container">
+                <div>
+                    <h2>Add Today's Attendance</h2>
+                </div>
+                <div class="float100">
+                    <div class="float50">
+                        <label for="">Roll No: </label>
+                    </div>
+                    <div class="float50">
+                        <input type="number" name="traineeRollNo" id="traineeRollNo" placeholder="Enter roll no" min="1"><span
+                            id="checkTraineeRoll" class="errorMsg" onblur="validateRoll()"></span>
+                    </div>
+                </div>
+                <div class="float100 btn-div">
+                    <div>
+                        <button onclick="getAttendance()" class="btn">Present</button>
+                        <button onclick="" class="btn">Absent</button>
+                    </div>
+                    <div>
+                        <span id="rollDoesNotExist" class="errorMsg"></span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p id="displayAttendance"></p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Roll No</th>
+                            <th>Name</th>
+                            <th>Course</th>
+                            <th>Attendance</th>
+                            <th>Date and time</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-content2">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="Attendance.js"></script>
+<!-- <script src="validation.js"></script> -->
+
+</html>
