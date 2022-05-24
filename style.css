@@ -1,0 +1,66 @@
+body {
+    background: linear-gradient(to bottom right, pink, beige);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.float100 {
+    width: 100%;
+    font-size: 18px;
+}
+
+.float50 {
+    width: 45%;
+    float: left;
+    padding: 5px;
+}
+
+.form-container {
+    margin: auto;
+    margin-top: 30px;
+    padding: 30px;
+    width: 400px;
+    background-color: white;
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: 1px 1px gray;
+}
+
+.btn {
+    background-color: darkturquoise;
+    border: 0px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 12px;
+    font-size: 14px;
+    font-style: italic;
+    color: white;
+}
+
+.btn-div {
+    text-align: center;
+}
+
+.errorMsg {
+    color: red;
+    font-size: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+table, tr, td, th {
+    border: 1px solid black;
+    padding: 5px;
+    background-color: floralwhite;
+    border-radius: 5px;
+}
+
+table {
+    margin: auto;
+}
+
+input {
+    margin: 8px;
+}
